@@ -11,8 +11,11 @@
   
   .topbar {
     display: flex;
-    background-color: #111;
+    position: fixed;
+    top: 0;
+    background-color: #242526;
     height: 70px;
+    width: 100vw;
   }
   
   .container {
@@ -22,8 +25,11 @@
   }
   
   .sidebar {
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    left: 0;
     width: 20%;
     padding: 10px;
     overflow-y: auto;
@@ -52,23 +58,62 @@
     border-radius: 15px;
     padding-right: 5px;
   }
+
+  img.facebookPic {
+
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
   
   .sidebar-profile p {
     margin-left: 5px;
   }
   
   .feed {
+    margin-top: 70px;
     width: 40%;
     padding: 10px;
   }
-  
+  .searchBar {
+
+    background-color: #3a3b3c;
+    height: 75%;
+    width: 300px;
+    border: 0px;
+    margin-top: 10px;
+    border-radius: 50px;
+    color: white;
+    padding-left: 20px;
+    font-size: 20px;
+  }
   .cards {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     overflow-x: scroll;
   }
-  
+  .tabIconSelected{
+
+    height: 75%;
+    width: 75px;
+    margin-top: 10px;
+    margin-left: 75px;
+    border-bottom: 2px solid #2d88ff;
+  }
+  .tabIcon{
+
+    height: 75%;
+    width: 75px;
+    margin-top: 10px;
+    margin-left: 80px;
+
+  }
+  .tabIcon:hover{
+
+    border-bottom: 2px solid gray;
+
+  }
   .card {
     flex-shrink: 0;
     width: 120px;
@@ -131,12 +176,23 @@
     padding: 10px;
   }
   
+  .profile-topBar{
+
+    background-color: #3a3b3c;
+    
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 80px;
+    height: 75%;
+
+  }
+
   .sidebar-text{
 
     font-family: arial;
     color: white;
     font-weight: bold;
-
+    padding-left: 10px;
   }
 
   .gray-text {
