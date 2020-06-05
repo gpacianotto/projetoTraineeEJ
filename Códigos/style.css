@@ -123,6 +123,12 @@
     border-radius: 5px;
     order: 10;
   }
+  .cardText{
+    position: absolute;
+    bottom: 20px;
+    
+
+  }
   
   .card:nth-child(4) {
     order: 9;
