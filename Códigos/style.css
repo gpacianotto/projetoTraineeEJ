@@ -42,6 +42,7 @@
   .sidebar-item {
     display: flex;
     flex-direction: row;
+    position: relative;
     align-items: center;
     background-color: transparent;
     min-height: 44px;
@@ -194,10 +195,19 @@
   }
   
   .contacts {
+    margin-top: 70px;
     width: 20%;
     padding: 10px;
   }
-  
+  .onlineGreenBall{
+    position: relative;
+    width: 5px;
+    height: 5px;
+    background-color: limegreen;
+    border-radius: 10px;
+    left: 2px;
+    bottom: 0px;
+  }
   .profile-topBar{
 
     background-color: transparent;
